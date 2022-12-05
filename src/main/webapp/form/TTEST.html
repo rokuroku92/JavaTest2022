@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>jQuery13 example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <style>
+            p {background-color: lightyellow;}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <p id="p1"> - This is 1- </p>
+            <p id="p2"> - This is 2- </p>
+            <p id="p3"> - This is 3- </p>
+        </div>
+        <br>
+        <button id="myButton">click me</button>
+        <script>
+            $('p').click(function() {
+                $(this).css('background-color', 'red');
+            });
+            $('#myButton').click(function() {
+                $('#p2').click();
+            });
+        </script>
+    </body>
+</html>

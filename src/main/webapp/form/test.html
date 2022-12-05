@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>jQuery12 example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <style>
+            p {background-color: lightyellow;}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <p id="p1"> - This is <font id="f1" color="red">paragraph</font> - </p>
+            <p id="p2"> - This is <font id="f2" color="blue">paragraph</font> - </p>
+        </div>
+        <br>
+        <button id="myButton">click me</button>
+        <script>
+            $('#myButton').click(function (){
+                $('#f1').clone().appendTo('#p2');
+                alert($('#container').html());
+            });
+        </script>
+    </body>
+</html>
