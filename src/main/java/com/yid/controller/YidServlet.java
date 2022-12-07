@@ -2,8 +2,6 @@ package com.yid.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Enumeration;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,7 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import jdk.internal.net.http.RequestPublishers;
 
 @WebServlet(urlPatterns = "/yid")
 public class YidServlet extends HttpServlet{
@@ -20,7 +17,7 @@ public class YidServlet extends HttpServlet{
     
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // 導向 bmiform.jsp 的表單
+        // 導向 form.jsp 的表單
         RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/view/yid.jsp");
         rd.forward(req, resp);
     }
