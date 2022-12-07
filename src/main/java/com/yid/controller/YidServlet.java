@@ -30,6 +30,7 @@ public class YidServlet extends HttpServlet{
     
     private void doHandler(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 得到 form 表單資料
+        req.setCharacterEncoding("UTF-8");
         String company = req.getParameter("company");
         String name = req.getParameter("name");
         String tel = req.getParameter("tel");
