@@ -18,7 +18,7 @@ public class GuestBookTest {
         System.out.println(service.getGuestBookById(1));
         
         // 1. 查詢所有 categories
-        System.out.println(service.queryCategorys());
+        System.out.println(service.queryCategories());
         
         // 2. 查詢單筆 category
         System.out.println(service.getCategoryById(1));
