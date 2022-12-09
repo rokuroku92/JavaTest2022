@@ -18,7 +18,7 @@
                 <select id="volt" name="volt">
                     <option value="110">110V</option>
                     <option value="220">220V</option>
-                    <option value="330">330V</option>
+                    <option value="330" selected>330V</option>
                 </select></p>
                 <p>安培(A):
                     <input type="number" id="ampere" name="ampere" value="${ampere}" style="text-align: center">

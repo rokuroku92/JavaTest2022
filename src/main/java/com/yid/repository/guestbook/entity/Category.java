@@ -1,5 +1,7 @@
 package com.yid.repository.guestbook.entity;
 
+import java.util.List;
+
 
 public class Category {
     private Integer id;

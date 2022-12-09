@@ -65,6 +65,11 @@ public class GuestBook {
     public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+
+    @Override
+    public String toString() {
+        return "GuestBook{" + "id=" + id + ", category=" + category + ", username=" + username + ", email=" + email + ", message=" + message + ", updatetime=" + updatetime + ", createtime=" + createtime + '}';
+    }
     
     
 }
