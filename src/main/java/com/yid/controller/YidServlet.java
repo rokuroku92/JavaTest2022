@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/yid")
 public class YidServlet extends HttpServlet{
     
-    private List<String[]> ctList = new ArrayList<>();
+    private final List<String[]> ctList = new ArrayList<>();
     
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -37,7 +37,7 @@ public class YidServlet extends HttpServlet{
         String tel2 = req.getParameter("tel2");
         String email = req.getParameter("email");
         String content = req.getParameter("content");
-        // 遍歷
+        
         System.out.println("company: "+company);
         System.out.println("name: "+name);
         System.out.println("tel: "+tel);
