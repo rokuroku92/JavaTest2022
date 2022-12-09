@@ -35,7 +35,7 @@ public class GuestBookService {
     public Category getCategoryById(Integer id){
         return categoryDao.getById(id);
     }
-    public List<Category> queryCategorys(){
+    public List<Category> queryCategories(){
         return categoryDao.queryAll();
     }
 }

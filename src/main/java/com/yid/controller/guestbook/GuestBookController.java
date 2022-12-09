@@ -36,7 +36,7 @@ public class GuestBookController extends HttpServlet{
         
         RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/view/guestbook/index.jsp");
         req.setAttribute("guestbooks", service.queryGuestBooks());
-        req.setAttribute("categories", service.queryCategorys());
+        req.setAttribute("categories", service.queryCategories());
         req.setAttribute("mode", mode); 
         req.setAttribute("guestBook", guestBook);
         
