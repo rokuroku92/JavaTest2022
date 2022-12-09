@@ -3,7 +3,6 @@ package test;
 import com.yid.repository.guestbook.entity.Category;
 import com.yid.repository.guestbook.entity.GuestBook;
 import com.yid.service.guestbook.GuestBookService;
-import java.util.List;
 
 
 public class GuestBookTest {
