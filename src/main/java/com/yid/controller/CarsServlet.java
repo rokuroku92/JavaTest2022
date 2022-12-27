@@ -19,7 +19,7 @@ public class CarsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         
-        URL url = new URL("http://192.168.1.246:20100/cars");
+        URL url = new URL("http://192.168.1.143:20100/cars");
         
         String data = new Scanner(url.openStream(), "UTF-8").useDelimiter("\\A").next();
         
