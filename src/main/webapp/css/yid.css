@@ -4,3 +4,26 @@
     height: 400px;
     margin: 0 auto;
 }
+.flex-container {
+  display: flex;
+  height: 300px;
+  padding: 10px;
+  background-color: #526E89;
+  flex-direction:row;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+
+.item {
+  width: 25%;
+  background-color: #E9FF66;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #526E89;
+  font-size: 2rem;
+  padding:10px;
+}
